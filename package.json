@@ -1,0 +1,19 @@
+{
+  "name": "ds-with-js",
+  "version": "1.0.0",
+  "description": "implement and practice ds with typescript",
+  "repository": "git@github.com:chankruze/ds-with-ts.git",
+  "author": "chankruze <chankruze@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "dependencies": {
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  }
+}
