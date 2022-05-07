@@ -35,17 +35,22 @@ var Arr = /** @class */ (function () {
         this.insertAtTheEnd = function (elem) { return __classPrivateFieldGet(_this, _Arr_array, "f").push(elem); };
         // insert an array element at the beginning
         this.insertAtTheBeginning = function (elem) { return __classPrivateFieldGet(_this, _Arr_array, "f").unshift(elem); };
-        // delete an array element
+        // delete first element
+        this.deleteFirstElem = function () { return __classPrivateFieldGet(_this, _Arr_array, "f").shift(); };
+        // delete last element
+        this.deleteLastElem = function () { return __classPrivateFieldGet(_this, _Arr_array, "f").pop(); };
+        // delete first occurance of an array element
         this.deleteFirstOccuranceOfElem = function (elem) {
             var firstIndex = __classPrivateFieldGet(_this, _Arr_array, "f").indexOf(elem);
             __classPrivateFieldSet(_this, _Arr_array, __classPrivateFieldGet(_this, _Arr_array, "f").filter(function (_, idx) { return idx !== firstIndex; }), "f");
         };
+        // delete last occurance of an array element
+        this.deleteLastOccuranceOfElem = function (elem) {
+            var firstIndex = __classPrivateFieldGet(_this, _Arr_array, "f").lastIndexOf(elem);
+            __classPrivateFieldSet(_this, _Arr_array, __classPrivateFieldGet(_this, _Arr_array, "f").filter(function (_, idx) { return idx !== firstIndex; }), "f");
+        };
         // delete all occurance of an element from the array
         this.deleteAllOccuranceOfElem = function (elem) { return __classPrivateFieldSet(_this, _Arr_array, __classPrivateFieldGet(_this, _Arr_array, "f").filter(function (num) { return num !== elem; }), "f"); };
-        // delete last element
-        this.deleteLastElem = function () { return __classPrivateFieldGet(_this, _Arr_array, "f").pop(); };
-        // delete first element
-        this.deleteFirstElem = function () { return __classPrivateFieldGet(_this, _Arr_array, "f").shift(); };
     }
     return Arr;
 }());

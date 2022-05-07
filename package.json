@@ -6,7 +6,7 @@
   "author": "chankruze <chankruze@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node",
+    "start": "node dist/index.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "dependencies": {

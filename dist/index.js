@@ -21,20 +21,23 @@ arr.insertAtTheEnd(3);
 arr.insertAtTheEnd(4);
 arr.insertAtTheEnd(5);
 arr.insertAtTheEnd(5);
+arr.insertAtTheEnd(5);
 arr.insertAtTheEnd(6);
 arr.insertAtTheEnd(7);
 arr.insertAtTheEnd(8);
 arr.insertAtTheEnd(9);
 // print array
 console.log(arr.getArrElems());
-// delete first occurance of a given number
-arr.deleteFirstOccuranceOfElem(5);
-// delete all occurance of a given number
-arr.deleteAllOccuranceOfElem(5);
-// delete last element
-arr.deleteLastElem();
 // delete first element
 arr.deleteFirstElem();
+// delete last element
+arr.deleteLastElem();
+// delete first occurance of a given number
+arr.deleteFirstOccuranceOfElem(5);
+// delete last occurance of a given number
+arr.deleteLastOccuranceOfElem(5);
+// delete all occurance of a given number
+arr.deleteAllOccuranceOfElem(5);
 arr.insertAtTheBeginning(4);
 arr.insertAtTheBeginning(3);
 arr.insertAtTheBeginning(2);

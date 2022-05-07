@@ -1,8 +1,8 @@
 
-Author: chankruze (chankruze@geekofia.in)
-Created: Sat Oct 30 2021 16:15:00 GMT+0530 (India Standard Time)
+# Author: chankruze (chankruze@geekofia.in)
+# Created: Sat Oct 30 2021 16:15:00 GMT+0530 (India Standard Time)
 
-Copyright (c) Geekofia 2021 and beyond
+# Copyright (c) Geekofia 2021 and beyond
 
-
-node_modules
+dist/
+node_modules/
