@@ -39,4 +39,17 @@ export default class Stack {
   public isFull(): boolean {
     return this.arr.length === this.max_size
   }
+
+  // get max size of the stack
+  public getMaxSize(): number {
+    return this.max_size
+  }
+
+  // peek element from stack
+  public peek(): number | undefined {
+    if (this.isEmpty()) {
+      return undefined
+    }
+    return this.arr[this.arr.length - 1]
+  }
 }

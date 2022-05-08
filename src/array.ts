@@ -11,41 +11,43 @@ export default class Arr {
    * created by using a hash # prefix. The privacy encapsulation of these
    * class features is enforced by JavaScript itself.
    */
-  #array: Array<number> = []
+  private array: Array<number>
 
-  constructor() {}
+  constructor() {
+    this.array = []
+  }
 
   // see the size of array
-  getSize = () => this.#array.length
+  getSize = () => this.array.length
 
   // print
-  getArrElems = () => this.#array
+  getArrElems = () => this.array
 
   // insert an array element
-  insertAtTheEnd = (elem: number) => this.#array.push(elem)
+  insertAtTheEnd = (elem: number) => this.array.push(elem)
 
   // insert an array element at the beginning
-  insertAtTheBeginning = (elem: number) => this.#array.unshift(elem)
+  insertAtTheBeginning = (elem: number) => this.array.unshift(elem)
 
   // delete first element
-  deleteFirstElem = () => this.#array.shift()
+  deleteFirstElem = () => this.array.shift()
 
   // delete last element
-  deleteLastElem = () => this.#array.pop()
+  deleteLastElem = () => this.array.pop()
 
   // delete first occurance of an array element
   deleteFirstOccuranceOfElem = (elem: number) => {
-    const firstIndex = this.#array.indexOf(elem)
-    this.#array = this.#array.filter((_, idx) => idx !== firstIndex)
+    const firstIndex = this.array.indexOf(elem)
+    this.array = this.array.filter((_, idx) => idx !== firstIndex)
   }
 
   // delete last occurance of an array element
   deleteLastOccuranceOfElem = (elem: number) => {
-    const firstIndex = this.#array.lastIndexOf(elem)
-    this.#array = this.#array.filter((_, idx) => idx !== firstIndex)
+    const firstIndex = this.array.lastIndexOf(elem)
+    this.array = this.array.filter((_, idx) => idx !== firstIndex)
   }
 
   // delete all occurance of an element from the array
   deleteAllOccuranceOfElem = (elem: number) =>
-    (this.#array = this.#array.filter((num) => num !== elem))
+    (this.array = this.array.filter((num: number) => num !== elem))
 }
