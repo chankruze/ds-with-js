@@ -22,12 +22,12 @@ export default class Stack {
   // pop element from stack
   public pop(): number | undefined {
     if (this.isEmpty()) {
-      const data = this.arr[this.arr.length - 1]
-      this.arr[this.arr.length - 1] = undefined
-      return data
+      return undefined
     }
 
-    return undefined
+    const data = this.arr[this.arr.length - 1]
+    this.arr[this.arr.length - 1] = undefined
+    return data
   }
 
   // check if stack is empty
