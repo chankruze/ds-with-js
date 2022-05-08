@@ -4,5 +4,6 @@
 
 # Copyright (c) Geekofia 2021 and beyond
 
-dist/
+coverage/
 node_modules/
+dist/
